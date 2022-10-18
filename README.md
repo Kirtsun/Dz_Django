@@ -1,1 +1,1 @@
-# Dz_Django
+# Creating Your First Django Application
