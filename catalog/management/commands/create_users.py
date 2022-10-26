@@ -1,23 +1,34 @@
 from django.core.management.base import BaseCommand
-from faker import Faker
-from catalog.models import User
+from django.contrib.auth.hashers import make_password
 
+from django.contrib.auth import get_user_model
+
+
+from faker import Faker
+
+User = get_user_model()
 fake = Faker()
 
 
 class Command(BaseCommand):
-    help = "init"
+    help = "Create random users"
 
     def add_arguments(self, parser):
-        parser.add_argument('some_id', nargs='+', type=int, choises=range(1, 10))
+        parser.add_argument('some_id', type=int, choices=range(1, 11), help='Enter a number from 1 to 10 to'
+                                                                            ' create random users')
 
-    def handle(self, *args, **options):
-        some_id = options['some_id']
-        for i in range(some_id):
-            try:
-                some_id <= 10
-            except ValueError:
-                self.stdout.write('invalid value')
-            User.objects.create(username=fake.username(), email=fake.email(), password=fake.password())
+    def handle(self, *args, **kwargs):
+        objs = []
+        total = kwargs['some_id']
+        for i in range(total):
+            username = fake.user_name()
+            email = fake.email()
+            password = fake.password()
 
-
+            k = User(
+                username=username,
+                email=email,
+                password=make_password(password),
+            )
+            objs.append(k)
+        User.objects.bulk_create(objs)
