@@ -13,6 +13,15 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         users = kwargs['some_id']
-        a = User.objects.filter(pk=users[0])
-        print(a)
+        a = User.objects.filter(id__in=users)
+        b = User.objects.filter(id__in=users, is_superuser=True).exists()
+        if b is True:
+            self.stdout.write(f"Unable to delete super user, enter other id!")
+        else:
+            a.delete()
+            self.stdout.write(f'Users deleted with success!')
+
+
+
+
 
