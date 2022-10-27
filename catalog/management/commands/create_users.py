@@ -14,8 +14,8 @@ class Command(BaseCommand):
     help = "Create random users"
 
     def add_arguments(self, parser):
-        parser.add_argument('some_id', type=int, choices=range(1, 11), help='Enter a number from 1 to 10 to'
-                                                                            ' create random users')
+        parser.add_argument('some_id', nargs='?', type=int, choices=range(1, 11), help='Enter a number from 1 to 10 to'
+                                                                                       ' create random users')
 
     def handle(self, *args, **kwargs):
         objs = []
