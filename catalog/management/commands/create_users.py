@@ -3,7 +3,6 @@ from django.contrib.auth.hashers import make_password
 
 from django.contrib.auth import get_user_model
 
-
 from faker import Faker
 
 User = get_user_model()
