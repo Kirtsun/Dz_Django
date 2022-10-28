@@ -14,4 +14,4 @@
 
 # Connections of models:
 
-![](https://github.com/Kirtsun/Dz_Django/raw/django_extensions/connection/connection_models.png)
+![](https://github.com/Kirtsun/Dz_Django/raw/main/connection_models.png)
