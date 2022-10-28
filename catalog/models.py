@@ -30,4 +30,3 @@ class Distributor(models.Model):
 
     def __str__(self):
         return self.distrib
-
