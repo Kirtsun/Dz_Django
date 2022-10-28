@@ -1,15 +1,15 @@
 from django.db import models
 
 
-class Citi(models.Model):
-    citi = models.CharField(max_length=100)
+class City(models.Model):
+    city = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.citi
+        return self.city
 
 
 class Client(models.Model):
-    citi = models.ForeignKey('Citi', on_delete=models.CASCADE)
+    city = models.ForeignKey('City', on_delete=models.CASCADE)
     goods = models.ManyToManyField('Goods')
     names = models.CharField(max_length=100)
 
@@ -26,7 +26,7 @@ class Goods(models.Model):
 
 class Distributor(models.Model):
     distrib = models.CharField(max_length=100)
-    citi = models.OneToOneField('Citi', on_delete=models.CASCADE)
+    city = models.OneToOneField('City', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.distrib
