@@ -1,0 +1,449 @@
+[
+{
+  "model": "catalog.city",
+  "pk": 1,
+  "fields": {
+    "city": "Dnepr"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 2,
+  "fields": {
+    "city": "Kiev"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 3,
+  "fields": {
+    "city": "Kharkiv"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 4,
+  "fields": {
+    "city": "Odesa"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 5,
+  "fields": {
+    "city": "Zaporizhzhia"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 6,
+  "fields": {
+    "city": "Lviv"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 7,
+  "fields": {
+    "city": "Kryvyi Rih"
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 1,
+  "fields": {
+    "city": 1,
+    "names": "Oleh",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 2,
+  "fields": {
+    "city": 1,
+    "names": "Ivan",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 3,
+  "fields": {
+    "city": 1,
+    "names": "Ira",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 4,
+  "fields": {
+    "city": 2,
+    "names": "Kriss",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 5,
+  "fields": {
+    "city": 2,
+    "names": "fake.name",
+    "goods": [
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 6,
+  "fields": {
+    "city": 2,
+    "names": "fake.name()",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 7,
+  "fields": {
+    "city": 2,
+    "names": "Claire Page",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 8,
+  "fields": {
+    "city": 3,
+    "names": "Brenda Patel",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 9,
+  "fields": {
+    "city": 3,
+    "names": "Ashley",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 10,
+  "fields": {
+    "city": 3,
+    "names": "Louis",
+    "goods": [
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 11,
+  "fields": {
+    "city": 4,
+    "names": "Tim",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 12,
+  "fields": {
+    "city": 4,
+    "names": "Tiffany",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 13,
+  "fields": {
+    "city": 4,
+    "names": "Tara",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 14,
+  "fields": {
+    "city": 4,
+    "names": "Joseph",
+    "goods": [
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 15,
+  "fields": {
+    "city": 5,
+    "names": "Albert",
+    "goods": [
+      7
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 16,
+  "fields": {
+    "city": 5,
+    "names": "Timothy",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 17,
+  "fields": {
+    "city": 5,
+    "names": "Gary",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 18,
+  "fields": {
+    "city": 5,
+    "names": "Richard",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 19,
+  "fields": {
+    "city": 6,
+    "names": "Phillip",
+    "goods": [
+      4,
+      7,
+      11
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 20,
+  "fields": {
+    "city": 6,
+    "names": "Ryan",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 21,
+  "fields": {
+    "city": 6,
+    "names": "Kimberly",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 22,
+  "fields": {
+    "city": 6,
+    "names": "Gina",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 23,
+  "fields": {
+    "city": 7,
+    "names": "Robert",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 24,
+  "fields": {
+    "city": 7,
+    "names": "David",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 25,
+  "fields": {
+    "city": 7,
+    "names": "Lance",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 26,
+  "fields": {
+    "city": 7,
+    "names": "Matthew",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 27,
+  "fields": {
+    "city": 7,
+    "names": "Jonathan",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 28,
+  "fields": {
+    "city": 7,
+    "names": "Dale",
+    "goods": []
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 1,
+  "fields": {
+    "products": "bacon"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 2,
+  "fields": {
+    "products": "beef"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 3,
+  "fields": {
+    "products": "chicken"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 4,
+  "fields": {
+    "products": "cod"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 5,
+  "fields": {
+    "products": "asparagus"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 6,
+  "fields": {
+    "products": "avocado"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 7,
+  "fields": {
+    "products": "beet"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 8,
+  "fields": {
+    "products": "carrot"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 9,
+  "fields": {
+    "products": "apple"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 10,
+  "fields": {
+    "products": "cherry"
+  }
+},
+{
+  "model": "catalog.goods",
+  "pk": 11,
+  "fields": {
+    "products": "barley"
+  }
+},
+{
+  "model": "catalog.distributor",
+  "pk": 1,
+  "fields": {
+    "distrib": "BMW",
+    "city": 1
+  }
+},
+{
+  "model": "catalog.distributor",
+  "pk": 2,
+  "fields": {
+    "distrib": "BMW",
+    "city": 2
+  }
+},
+{
+  "model": "catalog.distributor",
+  "pk": 3,
+  "fields": {
+    "distrib": "Mersedes",
+    "city": 3
+  }
+},
+{
+  "model": "catalog.distributor",
+  "pk": 4,
+  "fields": {
+    "distrib": "Mazda",
+    "city": 4
+  }
+},
+{
+  "model": "catalog.distributor",
+  "pk": 5,
+  "fields": {
+    "distrib": "Porshe",
+    "city": 5
+  }
+},
+{
+  "model": "catalog.distributor",
+  "pk": 6,
+  "fields": {
+    "distrib": "Lexus",
+    "city": 6
+  }
+},
+{
+  "model": "catalog.distributor",
+  "pk": 7,
+  "fields": {
+    "distrib": "Toyota",
+    "city": 7
+  }
+}
+]
