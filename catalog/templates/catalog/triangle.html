@@ -5,11 +5,11 @@
     <title>Triangle</title>
 </head>
 <body>
-
+<h1> Hypotenuse calculation</h1>
 <form action="{% url 'catalog:triangle' %}" method="get">
     {% if res %}
     <p> Hypotenuse = <strong>{{ res }} sm.</strong></p>
-    <a href={% url 'catalog:triangle' %}> Triangle </a>
+    <a href={% url 'catalog:triangle' %}> Back to calculations </a>
     {% else %}
     {{form.as_p}}
     <input type="submit" name="Done" value="OK">
