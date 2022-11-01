@@ -4,10 +4,6 @@ from django.views.decorators.http import require_http_methods
 from .forms import Gipot
 
 
-def index(request):
-    return render(request, "catalog/index.html")
-
-
 @require_http_methods(['GET', ])
 def triangle(request):
     if 'Submit' in request.GET:
