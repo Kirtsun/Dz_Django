@@ -5,11 +5,15 @@
     <title>Triangle</title>
 </head>
 <body>
-{{res}}
-<form method="get">
-    {{form.as_p}}
 
+<form action="{% url 'catalog:triangle' %}" method="get">
+    {% if res %}
+    <p> Hypotenuse = <strong>{{ res }} cm.</strong></p>
+    <a href={% url 'catalog:triangle' %}> Triangle </a>
+    {% else %}
+    {{form.as_p}}
     <input type="submit" name="Done" value="OK">
+    {% endif %}
 </form>
 </body>
 </html>
