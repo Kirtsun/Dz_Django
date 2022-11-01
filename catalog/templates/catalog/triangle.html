@@ -8,7 +8,7 @@
 
 <form action="{% url 'catalog:triangle' %}" method="get">
     {% if res %}
-    <p> Hypotenuse = <strong>{{ res }} cm.</strong></p>
+    <p> Hypotenuse = <strong>{{ res }} sm.</strong></p>
     <a href={% url 'catalog:triangle' %}> Triangle </a>
     {% else %}
     {{form.as_p}}
