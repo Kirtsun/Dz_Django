@@ -15,3 +15,7 @@
 # Connections of models:
 
 ![](https://github.com/Kirtsun/Dz_Django/raw/main/connection_models.png)
+
+## New views have been created since November 1, 2022: 
+- index(start page)
+- triangle(calculates the value of the hypotenuse)
