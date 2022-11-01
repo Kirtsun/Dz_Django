@@ -1,15 +1,17 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.decorators.http import require_http_methods
 
 from .forms import Gipot
 
 
 def index(request):
-    return HttpResponse("Hello. You're at the catalog index.")
+    return render(request, "catalog/index.html")
 
 
+@require_http_methods(['GET', ])
 def triangle(request):
-    if 'Done' in request.GET:
+    if 'Submit' in request.GET:
         form = Gipot(request.GET)
         if form.is_valid():
             leg1 = int(request.GET.get("leg1"))
