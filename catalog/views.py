@@ -14,5 +14,6 @@ def triangle(request):
             res = (leg1 ** 2 + leg2 ** 2) ** .5
             res = round(res, 2)
             return render(request, "catalog/triangle.html", {'res': res})
-    form = Gipot()
+    else:
+        form = Gipot()
     return render(request, "catalog/triangle.html", {"form": form})
