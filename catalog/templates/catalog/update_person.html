@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Update Person</title>
 </head>
+<body>
+<p><h2> Update person </h2></p>
 <form action="{% url 'catalog:person_update' form.instance.pk %}" method="POST">
     {% csrf_token %}
     {{form.as_p}}
     <p><input type="submit" value="Update"></p>
 
 </form>
-<body>
 
 </body>
 </html>
