@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.decorators.http import require_http_methods
 
-from .forms import Gipot
+from .forms import Gipot, PersonForm
+from .models import Person
 
 
 @require_http_methods(['GET', ])
@@ -20,4 +21,12 @@ def triangle(request):
 
 
 def person(request):
-    pass
+    if request.method == "POST":
+        form = PersonForm(request.POST)
+        if form.is_valid():
+            Person.objects.create(**form.cleaned_data)
+            return redirect('catalog:person')
+    else:
+        form = PersonForm()
+    return render(request, 'catalog/create_person.html', {'form': form})
+

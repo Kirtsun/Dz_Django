@@ -8,7 +8,7 @@ class Gipot(forms.Form):
     leg2 = forms.IntegerField(label='leg of the hypotenuse 2', min_value=1)
 
 
-class Pers(ModelForm):
+class PersonForm(ModelForm):
     class Meta:
         model = Person
         fields = ['first_name', 'last_name', 'email']
