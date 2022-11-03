@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect
-from django.views.decorators.http import require_http_methods
 from django.shortcuts import get_object_or_404
+from django.shortcuts import redirect, render
+from django.views.decorators.http import require_http_methods
+
 
 from .forms import Gipot, PersonForm
 from .models import Person
@@ -25,22 +26,20 @@ def person_create(request):
     if request.method == "POST":
         form = PersonForm(request.POST)
         if form.is_valid():
-            pers = form.save()
+            form.save()
             return redirect('catalog:person_create')
     else:
         form = PersonForm()
     return render(request, 'catalog/create_person.html', {'form': form})
 
 
-def person_update(request, id):
-    person = get_object_or_404(Person, pk=id)
+def person_update(request, pk):
+    person = get_object_or_404(Person, pk=pk)
     if request.method == "POST":
         form = PersonForm(request.POST, instance=person)
         if form.is_valid():
-            pers = form.save()
+            form.save()
             return redirect('catalog:person_create')
     else:
         form = PersonForm(instance=person)
     return render(request, 'catalog/update_person.html', {'form': form})
-
-
