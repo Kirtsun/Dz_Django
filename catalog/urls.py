@@ -5,5 +5,6 @@ from . import views
 app_name = "catalog"
 
 urlpatterns = [
-    path('triangle/', views.triangle, name='triangle')
+    path('triangle/', views.triangle, name='triangle'),
+    path('person/', views.person, name='person')
 ]

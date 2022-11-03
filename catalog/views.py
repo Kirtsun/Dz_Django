@@ -17,3 +17,7 @@ def triangle(request):
     else:
         form = Gipot()
     return render(request, "catalog/triangle.html", {"form": form})
+
+
+def person(request):
+    pass
