@@ -9,8 +9,7 @@ from .models import Person
 
 def index(request):
     latest_person_list = Person.objects.all()
-    context = {'latest_person_list': latest_person_list}
-    return render(request, 'catalog/index.html', context)
+    return render(request, 'catalog/index.html', {'latest_person_list': latest_person_list})
 
 
 @require_http_methods(['GET', ])
