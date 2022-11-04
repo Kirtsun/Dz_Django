@@ -1,0 +1,74 @@
+[
+{
+  "model": "catalog.person",
+  "pk": 1,
+  "fields": {
+    "first_name": "Oleg",
+    "last_name": "Kirtsun",
+    "email": "qwee@gmail.com"
+  }
+},
+{
+  "model": "catalog.person",
+  "pk": 2,
+  "fields": {
+    "first_name": "Olegovich",
+    "last_name": "Kirtsun",
+    "email": "qwee@gmail.com"
+  }
+},
+{
+  "model": "catalog.person",
+  "pk": 3,
+  "fields": {
+    "first_name": "Kriss",
+    "last_name": "Kriss",
+    "email": "qweewww@gmail.com"
+  }
+},
+{
+  "model": "catalog.person",
+  "pk": 4,
+  "fields": {
+    "first_name": "Ilona",
+    "last_name": "Ilona",
+    "email": "qweewww@gmail.com"
+  }
+},
+{
+  "model": "catalog.person",
+  "pk": 5,
+  "fields": {
+    "first_name": "Ivanovch",
+    "last_name": "Oleg",
+    "email": "qweewww@gmail.com"
+  }
+},
+{
+  "model": "catalog.person",
+  "pk": 6,
+  "fields": {
+    "first_name": "Катя",
+    "last_name": "Мержиевская",
+    "email": "54@gmai.com"
+  }
+},
+{
+  "model": "catalog.person",
+  "pk": 7,
+  "fields": {
+    "first_name": "Max",
+    "last_name": "Sirota",
+    "email": "sirota@gmail.com"
+  }
+},
+{
+  "model": "catalog.person",
+  "pk": 8,
+  "fields": {
+    "first_name": "Ira",
+    "last_name": "Ira",
+    "email": "reqw@gmail.com"
+  }
+}
+]

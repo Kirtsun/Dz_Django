@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Person</title>
+</head>
+<body>
+<p><h2> Create person </h2></p>
+<form action="{% url 'catalog:person_create' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <p><input type="submit" value="create"></p>
+    <p><a href="{% url 'catalog:index' %}">Back to index</a></p>
+</form>
+
+</body>
+</html>
