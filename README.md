@@ -1,20 +1,27 @@
-# Creating Your First Django Application
+## Creating Your First Django Application
 
 
-### Added changes to two new commands for the catalog application:
+## Added changes to two new commands for the catalog application:
 - create_users;
 - delete_users.
 
 
 ## New models are created in the version dated 10/28/2022:
-- Client
+- ClientUpdate from 11/04/2022
 - City
 - Goods
 - Distributor
 
-# Connections of models:
+## Connections of models:
 
 ![](https://github.com/Kirtsun/Dz_Django/raw/main/connection_models.png)
 
 ## New views have been created since November 1, 2022: 
 - triangle(calculates the value of the hypotenuse)
+
+
+## Update from 11/04/2022:
+ - New view "Create Person"
+ - New viev "Update Person"
+ 
+ ### To get started - go to the home page "/catalog/"
