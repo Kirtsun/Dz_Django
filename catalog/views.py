@@ -7,6 +7,12 @@ from .forms import Gipot, PersonForm
 from .models import Person
 
 
+def index(request):
+    latest_person_list = Person.objects.all()
+    context = {'latest_person_list': latest_person_list}
+    return render(request, 'catalog/index.html', context)
+
+
 @require_http_methods(['GET', ])
 def triangle(request):
     if 'Submit' in request.GET:
@@ -27,7 +33,7 @@ def person_create(request):
         form = PersonForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('catalog:person_create')
+            return redirect('catalog:index')
     else:
         form = PersonForm()
     return render(request, 'catalog/create_person.html', {'form': form})
@@ -39,7 +45,7 @@ def person_update(request, pk):
         form = PersonForm(request.POST, instance=person)
         if form.is_valid():
             form.save()
-            return redirect('catalog:person_create')
+            return redirect('catalog:index')
     else:
         form = PersonForm(instance=person)
     return render(request, 'catalog/update_person.html', {'form': form})

@@ -10,6 +10,7 @@
     {% csrf_token %}
     {{form.as_p}}
     <p><input type="submit" value="create"></p>
+    <p><a href="{% url 'catalog:index' %}">Back to index</a></p>
 </form>
 
 </body>
