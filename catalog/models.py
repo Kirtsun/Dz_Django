@@ -46,4 +46,6 @@ class MiddleWare(models.Model):
     path = models.CharField(max_length=100)
     method = models.CharField(max_length=100)
     timestamp = models.DateTimeField(auto_now_add=True)
+    json = models.JSONField(default=0)
+
 
