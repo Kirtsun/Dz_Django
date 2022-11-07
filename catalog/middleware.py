@@ -6,21 +6,17 @@ class SimpleMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
-        path = request.path
-        method = request.method
         if request.method == 'POST':
             json = request.POST
         else:
             json = request.GET
-        if path[0:7] == '/admin/':
+        if request.path.find('admin') > 0:
             pass
         else:
-            k = MiddleWare(
-                path=path,
-                method=method,
+            MiddleWare(
+                path=request.path,
+                method=request.method,
                 json=json
-            )
-            q = [k]
-            MiddleWare.objects.bulk_create(q)
+            ).save()
         response = self.get_response(request)
         return response
