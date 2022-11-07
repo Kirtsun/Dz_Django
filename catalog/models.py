@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 
 class City(models.Model):
@@ -39,3 +40,10 @@ class Person(models.Model):
 
     def __str__(self):
         return self.first_name, self.last_name, self.email
+
+
+class MiddleWare(models.Model):
+    path = models.CharField(max_length=100)
+    method = models.CharField(max_length=100)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
