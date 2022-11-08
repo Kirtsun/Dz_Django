@@ -1,0 +1,129 @@
+[
+{
+  "model": "catalog.middleware",
+  "pk": 1,
+  "fields": {
+    "path": "/catalog/",
+    "method": "PO",
+    "timestamp": "2022-11-08T11:50:39.162Z",
+    "json": {}
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 2,
+  "fields": {
+    "path": "/catalog/person/",
+    "method": "PO",
+    "timestamp": "2022-11-08T11:53:15.980Z",
+    "json": {}
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 3,
+  "fields": {
+    "path": "/catalog/person/",
+    "method": "PO",
+    "timestamp": "2022-11-08T11:53:20.556Z",
+    "json": {
+      "csrfmiddlewaretoken": "1TaKmoxgyr03wbdrAukTrnEZWXmFrFGUXgctmZWyLco4ZzBzvG0BCqjRi6miLVXP",
+      "first_name": "Oleg",
+      "last_name": "Kirtsun",
+      "email": "qwee@gmail.com"
+    }
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 4,
+  "fields": {
+    "path": "/catalog/",
+    "method": "GE",
+    "timestamp": "2022-11-08T11:53:20.574Z",
+    "json": {}
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 5,
+  "fields": {
+    "path": "/catalog/triangle/",
+    "method": "GE",
+    "timestamp": "2022-11-08T12:00:43.142Z",
+    "json": {}
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 6,
+  "fields": {
+    "path": "/catalog/triangle/",
+    "method": "GE",
+    "timestamp": "2022-11-08T12:00:47.918Z",
+    "json": {
+      "leg1": "543",
+      "leg2": "345",
+      "Submit": "OK"
+    }
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 7,
+  "fields": {
+    "path": "/catalog/triangle/",
+    "method": "GE",
+    "timestamp": "2022-11-08T12:00:48.773Z",
+    "json": {}
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 8,
+  "fields": {
+    "path": "/catalog/triangle/",
+    "method": "GE",
+    "timestamp": "2022-11-08T12:03:00.002Z",
+    "json": {
+      "leg1": "43",
+      "leg2": "34",
+      "Submit": "OK"
+    }
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 9,
+  "fields": {
+    "path": "/catalog/triangle/",
+    "method": "GE",
+    "timestamp": "2022-11-08T12:03:00.997Z",
+    "json": {}
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 10,
+  "fields": {
+    "path": "/catalog/triangle/",
+    "method": "GE",
+    "timestamp": "2022-11-08T12:04:09.975Z",
+    "json": {
+      "leg1": "43",
+      "leg2": "34",
+      "Submit": "OK"
+    }
+  }
+},
+{
+  "model": "catalog.middleware",
+  "pk": 11,
+  "fields": {
+    "path": "/catalog/triangle/",
+    "method": "GE",
+    "timestamp": "2022-11-08T12:04:10.986Z",
+    "json": {}
+  }
+}
+]
