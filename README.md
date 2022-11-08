@@ -25,3 +25,7 @@
  - New viev "Update Person"
  
  ### To get started - go to the home page "/catalog/"
+
+## Update from 11/08/2022:
+- New Middleware(saves data from the request);
+- New Admin page(added new functionality)
