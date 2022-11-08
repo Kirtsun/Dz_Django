@@ -1,5 +1,4 @@
 from django.db import models
-import datetime
 
 
 class City(models.Model):
@@ -50,5 +49,3 @@ class MiddleWare(models.Model):
 
     def __str__(self):
         return f"{self.path}, {self.method}"
-
-
