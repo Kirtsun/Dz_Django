@@ -1,5 +1,4 @@
 from django.db import models
-import datetime
 
 
 class City(models.Model):
@@ -39,13 +38,14 @@ class Person(models.Model):
     email = models.EmailField(max_length=150)
 
     def __str__(self):
-        return self.first_name, self.last_name, self.email
+        return f'{self.first_name}, {self.last_name}, {self.email}'
 
 
 class MiddleWare(models.Model):
     path = models.CharField(max_length=100)
     method = models.CharField(max_length=100)
     timestamp = models.DateTimeField(auto_now_add=True)
-    json = models.JSONField(default=0)
+    json = models.JSONField(default={})
 
-
+    def __str__(self):
+        return f"{self.path}, {self.method}"
