@@ -8,14 +8,16 @@ class LogMiddleware:
     def __call__(self, request):
         if request.method == 'POST':
             json = request.POST
+            method = MiddleWare.POST
         else:
             json = request.GET
+            method = MiddleWare.GET
         if request.path.find('admin') > 0:
             pass
         else:
             MiddleWare(
                 path=request.path,
-                method=request.method,
+                method=method,
                 json=json
             ).save()
         response = self.get_response(request)
