@@ -11,8 +11,9 @@ class MiddleAdmin(admin.ModelAdmin):
         ('Method', {'fields': ['method']}),
         ('request data', {'fields': ['json']}),
     ]
-    list_display_links = ('path', 'method', 'timestamp', 'json', )
+    list_display_links = ('path', 'timestamp', 'json', )
     list_filter = ['method', 'timestamp']
+    list_editable = ['method']
     search_fields = ['path']
     date_hierarchy = 'timestamp'
     list_per_page = 10

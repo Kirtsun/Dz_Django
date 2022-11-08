@@ -42,8 +42,18 @@ class Person(models.Model):
 
 
 class MiddleWare(models.Model):
+    GET = 'GE'
+    POST = 'PO'
+    HEAD = 'HE'
+    DELETE = 'DE'
+    METHOD_CHOICES = [
+        (GET, 'GET'),
+        (POST, 'POST'),
+        (HEAD, 'HEAD'),
+        (DELETE, 'DELETE'),
+    ]
     path = models.CharField(max_length=100)
-    method = models.CharField(max_length=100)
+    method = models.CharField(max_length=2, choices=METHOD_CHOICES)
     timestamp = models.DateTimeField(auto_now_add=True)
     json = models.JSONField(default={})
 
